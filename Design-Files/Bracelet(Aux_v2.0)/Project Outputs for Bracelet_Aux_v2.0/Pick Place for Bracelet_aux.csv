@@ -1,0 +1,17 @@
+Altium Designer Pick and Place Locations
+C:\Users\eSpark-37\Documents\GitHub\BrianPeri-SmartWatch\Design-Files\Bracelet(Aux_v2.0)\Project Outputs for Bracelet_Aux_v2.0\Pick Place for Bracelet_aux.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       09/07/21
+Time:       02:42
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
+"Designator","Comment","Layer","Footprint","Center-X(mm)","Center-Y(mm)","Rotation","Description","Ref-X(mm)","Ref-Y(mm)","Pad-X(mm)","Pad-Y(mm)"
+"J2","SMD PADS","BottomLayer","SMD_PAD","175,8696mm","26,5938mm","180","","175,8696mm","26,5938mm","176,8856mm","26,5938mm"
+"J1","3 Pin FPC","TopLayer","3_Pin_FPC","175,7760mm","26,7716mm","180","CONN FPC 3POS 0.5MM SMD R/A","175,7760mm","26,7716mm","176,2760mm","26,7716mm"
+"C2","0.1uF","BottomLayer","CAP_0201","175,9966mm","28,6004mm","180","Multilayer Ceramic Capacitors MLCC - SMD/SMT 0201 0.1uF 25volts X5R 10%","175,9966mm","28,6004mm","176,2966mm","28,6004mm"
+"C1","0.1uF","TopLayer","CAP_0201","175,8950mm","28,7020mm","180","Multilayer Ceramic Capacitors MLCC - SMD/SMT 0201 0.1uF 25volts X5R 10%","175,8950mm","28,7020mm","176,1950mm","28,7020mm"

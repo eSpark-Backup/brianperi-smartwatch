@@ -1,0 +1,22 @@
+Altium Designer Pick and Place Locations
+C:\Users\eSpark-37\Documents\GitHub\BrianPeri-SmartWatch\Design-Files\Bracelet(Aux_v1.0)\Bracelet(Aux_v1.0)\Project Outputs for Bracelet_Aux\Pick Place for Aux_PCB.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       09/07/21
+Time:       03:20
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
+"Designator","Comment","Layer","Footprint","Center-X(mm)","Center-Y(mm)","Rotation","Description","Ref-X(mm)","Ref-Y(mm)","Pad-X(mm)","Pad-Y(mm)"
+"J1","CX80B1-24P","TopLayer","CX80B1-24P","4,3472mm","2,9902mm","360","CONN RCPT USB3.1 TYPE C SMT VERT","4,3472mm","2,9902mm","1,7222mm","3,7452mm"
+"R2","5.1K","TopLayer","Res-0201","5,2720mm","0,2540mm","180","Res 5.1K Ohm 5% 1/20W 0201","5,2720mm","0,2540mm","5,5470mm","0,2540mm"
+"R1","5.1K","TopLayer","Res-0201","3,4540mm","5,5792mm","360","Res 5.1K Ohm 5% 1/20W 0201","3,4540mm","5,5792mm","3,1790mm","5,5792mm"
+"J2","3 Pin FPC","BottomLayer","3_Pin_FPC","4,2480mm","0,5080mm","180","CONN FPC 3POS 0.5MM SMD R/A","4,2480mm","0,5080mm","4,7480mm","0,5080mm"
+"C5","0.1uF","BottomLayer","CAP_0201","4,4690mm","2,3622mm","180","Multilayer Ceramic Capacitors MLCC - SMD/SMT 0201 0.1uF 25volts X5R 10%","4,4690mm","2,3622mm","4,7690mm","2,3622mm"
+"C4","0.1uF","BottomLayer","CAP_0201","2,6890mm","2,2792mm","180","Multilayer Ceramic Capacitors MLCC - SMD/SMT 0201 0.1uF 25volts X5R 10%","2,6890mm","2,2792mm","2,9890mm","2,2792mm"
+"C3","0.1uF","BottomLayer","CAP_0201","5,7980mm","2,2606mm","360","Multilayer Ceramic Capacitors MLCC - SMD/SMT 0201 0.1uF 25volts X5R 10%","5,7980mm","2,2606mm","5,4980mm","2,2606mm"
+"C2","0.1uF","BottomLayer","CAP_0201","6,0610mm","3,6792mm","360","Multilayer Ceramic Capacitors MLCC - SMD/SMT 0201 0.1uF 25volts X5R 10%","6,0610mm","3,6792mm","5,7610mm","3,6792mm"
+"C1","0.1uF","BottomLayer","CAP_0201","2,8460mm","3,6792mm","180","Multilayer Ceramic Capacitors MLCC - SMD/SMT 0201 0.1uF 25volts X5R 10%","2,8460mm","3,6792mm","3,1460mm","3,6792mm"

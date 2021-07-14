@@ -1,0 +1,5 @@
+Added Net: Name=GND
+Added Net: Name=NetJ1_A5
+Added Net: Name=NetJ1_B5
+Added Net: Name=VBUS
+Added Class: Name=U_Connector_Section

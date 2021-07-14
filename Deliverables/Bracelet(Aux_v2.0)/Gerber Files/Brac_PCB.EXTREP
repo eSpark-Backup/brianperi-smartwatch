@@ -1,0 +1,24 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: Brac_PCB.GBR   7/9/2021  2:49:20 AM
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.GTL                Top Layer                               
+.GP2                GND                                     
+.GP1                POWER                                   
+.GPB                Bottom Pad Master                       
+.GPT                Top Pad Master                          
+.GBL                Bottom Layer                            
+.GTO                Fllex1 Top Overlay 1                    
+.GTP                Top Paste                               
+.GTS                Fllex1 Top Coverlay 1                   
+.GBS                Fllex1 Bottom Coverlay 1                
+.GBP                Bottom Paste                            
+.GBO                Fllex1 Bottom Overlay 1                 
+.GM2                Mechanical 2                            
+.GD1                Drill Drawing                           
+.GG1                Drill Guide                             
+------------------------------------------------------------------------------------------

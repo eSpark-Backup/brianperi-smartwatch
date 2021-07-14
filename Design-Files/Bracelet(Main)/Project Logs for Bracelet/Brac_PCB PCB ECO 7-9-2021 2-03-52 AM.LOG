@@ -1,0 +1,11 @@
+Added Component: Designator=U(2450AT18A100E)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Johanson Technology"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "2450AT18A100E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "FBGA-780 Johanson"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/2450AT18A100E/Johanson%20Technology%20Inc./view-part/267154/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC7_1 Pin=U-1
+Added Member To Class: ClassName=U_Controller_Section Member=Component U 2450AT18A100E

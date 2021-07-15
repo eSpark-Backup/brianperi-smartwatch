@@ -1,5 +1,0 @@
-DRC Rules Export File for PCB: C:\Users\eSpark-37\Documents\GitHub\BrianPeri-SmartWatch\Design-Files\Bracelet(Aux_v1.0)\Bracelet(Aux_v1.0)\Aux_PCB.PcbDoc
-RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
-RuleKind=Width|RuleName=Width|Scope=Board|Minimum=8.00
-RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=7.00
-RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0

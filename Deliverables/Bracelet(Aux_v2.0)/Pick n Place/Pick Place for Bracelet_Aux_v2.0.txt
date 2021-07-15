@@ -1,0 +1,17 @@
+Altium Designer Pick and Place Locations
+E:\GitHub\BrianPeri-SmartWatch\Design-Files\Bracelet(Aux_v2.0)\Pick Place for Bracelet_Aux_v2.0.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       15/07/21
+Time:       11:52
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+Designator Comment     Layer       Footprint Center-X(mil) Center-Y(mil) Rotation Description                                                               Ref-X(mil) Ref-Y(mil) Pad-X(mil) Pad-Y(mil) 
+J2         "SMD PADS"  BottomLayer SMD_PAD   6596.000      975.000       180      ""                                                                        6596.000   975.000    6636.000   975.000    
+J1         "3 Pin FPC" TopLayer    3_Pin_FPC 6592.315      982.000       180      "CONN FPC 3POS 0.5MM SMD R/A"                                             6592.315   982.000    6612.000   982.000    
+C2         0.1uF       BottomLayer CAP_0201  6601.000      1054.000      180      "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0201 0.1uF 25volts X5R 10%" 6601.000   1054.000   6612.811   1054.000   
+C1         0.1uF       TopLayer    CAP_0201  6597.000      1058.000      180      "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0201 0.1uF 25volts X5R 10%" 6597.000   1058.000   6608.811   1058.000   

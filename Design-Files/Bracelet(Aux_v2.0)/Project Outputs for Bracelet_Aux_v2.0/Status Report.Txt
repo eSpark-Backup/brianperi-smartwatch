@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Bracelet_Aux_v2.0.PrjPcb]
+   Generated File[Bracelet_Aux_v2.0.TXT]
+   Generated File[Bracelet_Aux_v2.0.LDP]
+   Generated File[Bracelet_Aux_v2.0.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 3:40:25 PM On 7/15/2021

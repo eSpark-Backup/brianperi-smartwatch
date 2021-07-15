@@ -5,8 +5,8 @@ E:\GitHub\BrianPeri-SmartWatch\Design-Files\Bracelet(Aux_v1.0)\Project Outputs f
 File Design Information:
 
 Date:       15/07/21
-Time:       11:59
-Revision:   33f534938934112ead43adb9b1c57363b2a259fe
+Time:       15:35
+Revision:   ea2cd8458df5bb4b51bdd5c4f9d7e5dc5b7bd998
 Variant:    No variations
 Units used: mm
 

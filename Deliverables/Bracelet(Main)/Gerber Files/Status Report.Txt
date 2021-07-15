@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Bracelet_Main.PrjPcb]
+   Generated File[Bracelet_Main.TXT]
+   Generated File[Bracelet_Main.LDP]
+   Generated File[Bracelet_Main.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 3:46:47 PM On 7/15/2021

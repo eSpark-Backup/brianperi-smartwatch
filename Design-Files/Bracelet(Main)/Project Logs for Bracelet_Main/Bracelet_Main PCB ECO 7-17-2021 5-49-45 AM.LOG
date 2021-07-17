@@ -1,4 +1,10 @@
-Removed Pin From Net: NetName=GND Pin=U1-2
+Removed Pin From Net: NetName=12V Pin=C39-1
+Removed Pin From Net: NetName=12V Pin=L4-2
+Removed Pin From Net: NetName=GND Pin=R13-1
+Removed Pin From Net: NetName=EN_AD Pin=U2-17
+Removed Pin From Net: NetName=12V Pin=U10-10
+Removed Member From Class: ClassName=U_Connector_Section Member=J6
+Removed Member From Class: ClassName=U_Battery_Charging_Section Member=J7
 Change Component Description : Designator=R8 Old Description=1.4MO ±1% 1/20W ±200ppm/? 0201 Chip Resistor - Surface Mount RoHS New Description=1.4MO ±1% 1/20W ±200ppm/? 0201 Chip Resistor - Surface Mount RoHS
 Change Component Description : Designator=R1 Old Description=10kO ±1% 1/20W ±200ppm/? 0201 Chip Resistor - Surface Mount RoHS New Description=10kO ±1% 1/20W ±200ppm/? 0201 Chip Resistor - Surface Mount RoHS
 Change Component Description : Designator=R3 Old Description=10kO ±1% 1/20W ±200ppm/? 0201 Chip Resistor - Surface Mount RoHS New Description=10kO ±1% 1/20W ±200ppm/? 0201 Chip Resistor - Surface Mount RoHS
@@ -88,3 +94,14 @@ Change component parameters (AddParameter): Name = "Power(Watts)"; Value = "1/20
 Change component parameters (AddParameter): Name = "Resistance"; Value = "13kO"; VariantName = "[No Variations]"
 Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "±200ppm/?"; VariantName = "[No Variations]"
 Change component parameters (AddParameter): Name = "Tolerance"; Value = "±5%"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VBUS Pin=C32-1
+Added Pin To Net: NetName=VBUS Pin=C33-1
+Added Pin To Net: NetName=VBAT Pin=R13-1
+Added Pin To Net: NetName=VBUS Pin=U9-5
+Added Pin To Net: NetName=VBUS Pin=U9-8
+Change Net Name : Old Net Name=EN_AD New Net Name=#EN_AD
+Added Pin To Net: NetName=EN_AD Pin=Q2-1
+Added Pin To Net: NetName=EN_AD Pin=R10-1
+Added Pin To Net: NetName=EN_AD Pin=U2-17
+Added Net: Name=EN_AD
+Added Member To Class: ClassName=U_Battery_Charging_Section Member=Component J6 HTP-CON-M411H

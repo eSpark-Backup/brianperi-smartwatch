@@ -1,0 +1,384 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD18\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">7/17/2021</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">5:54:30 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc" class="file"><acronym title="C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc">C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">1</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">11</td></tr>
+</table>
+</td>
+</table><a name="IDTHY25HAJ45GXMNHNVZVAT44M0C00EMOJFRCIW3DJFLUO3YKJKVD"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDGN4S0VW0TPZ2JBJCRUQHQ0T2IOMLMPBWJAEYFLQ2P4UYICYMPGG">Unplated multi-layer pad(s) detected</a></td>
+<td class="column2">1</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">1</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDTLLAL5NWBER3ME2AW31OVZJ41NWQNDBJMSYHRHKG0ZMNSUVF45UL">Clearance Constraint (Gap=5mil) (All),(All)</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMKXQ0N2MNIHIKRJG5PIHTR0KIDZLGMQPHFKIDWOJRXKZPISZWGM">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZGAV23XLFWFDHDIUOSNE0VOY3C31D4LYJ0PQQ4WZNQCELLXRLNB">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHE2ABCEHZLWRFIV4JCFZNVJEXF20NNRWCLFIAKJFLB3RC3P1PX5G">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDHWZOXSNL2AJLI4CLWSNWVAK51CLZE5SEI1YWO1LOAAEFNQYM5OH">Width Constraint (Min=8mil) (Max=40mil) (Preferred=22mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAO5KKOIS0HMIRRTPLM0CA21DLUVSVPNVTARBIHVTOZ4WY0XTVKC">Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQP14MFMKAS2VKFMICF1T5QH5XK0UOEAN2TPKKMJYYQEZTDSEIUHC">Hole Size Constraint (Min=1mil) (Max=100mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDD424BN5TGZKBPQAA5BRNTT2BGBXWVBI52J0MIYDX51MMYPKGHE">Hole To Hole Clearance (Gap=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDB2HYPG2OQLDQHRTL3KLQSFL1VXS5VPDGRKRVVKZL52KXXH35UO">Minimum Solder Mask Sliver (Gap=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEGW5E3NHIAK1J51KLTDZOK5PWIVKYG0S3VVGAKPJG1BK12LOHOPK">Silk To Solder Mask (Clearance=0mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXDCZYSNNVZTMPHFISFE1ZCU03DFFZCNQGF4PEYIEOXJYGLUCQJNO">Silk to Silk (Clearance=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1S12MBR2SS0GGWSUOR2LZWC53HQQRBNYRAS4SOJEN1QQMCJWBSHC">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDDXGFFZUL0VODIR1TWVLP1B2O01HXLJJYLB0K5EFOQRFCOOOBKMM">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">11</td>
+</tr>
+</table><br><a name="IDYHCLFWABTAVVDFFPSVKKZOCPLYVXJHR0UTMFKK5MVBQ30KHALKC"><h2>Warnings</h2></a><a name="IDGN4S0VW0TPZ2JBJCRUQHQ0T2IOMLMPBWJAEYFLQ2P4UYICYMPGG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning">Unplated multi-layer pad(s) detected</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1162.502mil|Location2.X=1216.218mil|Location1.Y=3822.566mil|Location2.Y=3876.283mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1162.502mil|Location2.X=1216.218mil|Location1.Y=3822.566mil|Location2.Y=3876.283mil|Absolute=True">Pad Free-NC(-838.819mil,-57.512mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=774.824mil|Location2.X=2091.415mil|Location1.Y=3682.519mil|Location2.Y=4492.465mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=774.824mil|Location2.X=2091.415mil|Location1.Y=3682.519mil|Location2.Y=4492.465mil|Absolute=True">Net 3V3</acronym></a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDTLLAL5NWBER3ME2AW31OVZJ41NWQNDBJMSYHRHKG0ZMNSUVF45UL"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=5mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1284.12mil|Location2.X=1287.12mil|Location1.Y=4118.401mil|Location2.Y=4121.401mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1284.12mil|Location2.X=1287.12mil|Location1.Y=4118.401mil|Location2.Y=4121.401mil|Absolute=True">Clearance Constraint: (Collision &lt; 3mil) Between Pad R13-1(-742.559mil,212.965mil) on Top Layer And Track (-742.559mil,212.965mil)(-742.559mil,240.197mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1085.416mil|Location2.X=1088.416mil|Location1.Y=4253.058mil|Location2.Y=4256.058mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1085.416mil|Location2.X=1088.416mil|Location1.Y=4253.058mil|Location2.Y=4256.058mil|Absolute=True">Clearance Constraint: (Collision &lt; 3mil) Between Pad U2-17(-942.016mil,348.376mil) on Top Layer And Track (-941.262mil,347.622mil)(-903.402mil,347.622mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1084.662mil|Location2.X=1087.662mil|Location1.Y=4253.812mil|Location2.Y=4256.812mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1084.662mil|Location2.X=1087.662mil|Location1.Y=4253.812mil|Location2.Y=4256.812mil|Absolute=True">Clearance Constraint: (Collision &lt; 3mil) Between Pad U2-17(-942.016mil,348.376mil) on Top Layer And Track (-942.016mil,348.376mil)(-941.262mil,347.622mil) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDMKXQ0N2MNIHIKRJG5PIHTR0KIDZLGMQPHFKIDWOJRXKZPISZWGM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Short-Circuit Constraint (Allowed=No) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1277.127mil|Location2.X=1294.113mil|Location1.Y=4113.01mil|Location2.Y=4129.997mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1277.127mil|Location2.X=1294.113mil|Location1.Y=4113.01mil|Location2.Y=4129.997mil|Absolute=True">Short-Circuit Constraint: Between Pad R13-1(-742.559mil,212.965mil) on Top Layer And Track (-742.559mil,212.965mil)(-742.559mil,240.197mil) on Top Layer Location : [X = 1285.62mil][Y = 4121.503mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1080.131mil|Location2.X=1098.121mil|Location1.Y=4245.563mil|Location2.Y=4263.553mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1080.131mil|Location2.X=1098.121mil|Location1.Y=4245.563mil|Location2.Y=4263.553mil|Absolute=True">Short-Circuit Constraint: Between Pad U2-17(-942.016mil,348.376mil) on Top Layer And Track (-941.262mil,347.622mil)(-903.402mil,347.622mil) on Top Layer Location : [X = 1089.126mil][Y = 4254.558mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1078.738mil|Location2.X=1094.34mil|Location1.Y=4247.134mil|Location2.Y=4262.736mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1078.738mil|Location2.X=1094.34mil|Location1.Y=4247.134mil|Location2.Y=4262.736mil|Absolute=True">Short-Circuit Constraint: Between Pad U2-17(-942.016mil,348.376mil) on Top Layer And Track (-942.016mil,348.376mil)(-941.262mil,347.622mil) on Top Layer Location : [X = 1086.539mil][Y = 4254.935mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDZGAV23XLFWFDHDIUOSNE0VOY3C31D4LYJ0PQQ4WZNQCELLXRLNB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1072.91mil|Location2.X=1459.344mil|Location1.Y=4244.423mil|Location2.Y=4337.905mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1072.91mil|Location2.X=1459.344mil|Location1.Y=4244.423mil|Location2.Y=4337.905mil|Absolute=True">Un-Routed Net Constraint: Net EN_AD Between Pad U2-17(-942.016mil,348.376mil) on Top Layer And Pad R10-1(-578.15mil,419.685mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1155.399mil|Location2.X=1437.273mil|Location1.Y=3990.586mil|Location2.Y=4032.247mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1155.399mil|Location2.X=1437.273mil|Location1.Y=3990.586mil|Location2.Y=4032.247mil|Absolute=True">Un-Routed Net Constraint: Net VBUS Between Track (-772.779mil,183.65mil)(-772.779mil,216.63mil) on Bottom Layer And Pad R11-1(-690.905mil,25.311mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1185.62mil|Location2.X=1446.958mil|Location1.Y=4019.901mil|Location2.Y=4222.728mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1185.62mil|Location2.X=1446.958mil|Location1.Y=4019.901mil|Location2.Y=4222.728mil|Absolute=True">Un-Routed Net Constraint: Net VBAT Between Pad R13-1(-742.559mil,212.965mil) on Top Layer And Track (-681.22mil,215.791mil)(-681.22mil,215.791mil) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID1S12MBR2SS0GGWSUOR2LZWC53HQQRBNYRAS4SOJEN1QQMCJWBSHC"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1278.12mil|Location2.X=1299.532mil|Location1.Y=4112.401mil|Location2.Y=4143.01mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1278.12mil|Location2.X=1299.532mil|Location1.Y=4112.401mil|Location2.Y=4143.01mil|Absolute=True">Net Antennae: Track (-742.559mil,212.965mil)(-742.559mil,240.197mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1079.416mil|Location2.X=1100.828mil|Location1.Y=4247.058mil|Location2.Y=4277.668mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\eSpark Group\Downloads\Brain Final Design\Design-Files\Bracelet(Main)\Bracelet_Main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1079.416mil|Location2.X=1100.828mil|Location1.Y=4247.058mil|Location2.Y=4277.668mil|Absolute=True">Net Antennae: Track (-941.262mil,347.622mil)(-903.402mil,347.622mil) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

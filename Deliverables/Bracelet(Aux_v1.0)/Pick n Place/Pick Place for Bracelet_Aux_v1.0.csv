@@ -1,0 +1,22 @@
+Altium Designer Pick and Place Locations
+C:\Users\eSpark-37\Documents\GitHub\BrianPeri-SmartWatch\Design-Files\Bracelet(Aux_v1.0)\Project Outputs for Bracelet_Aux_v1.0\Pick Place for Bracelet_Aux_v1.0.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       25/07/21
+Time:       19:17
+Revision:   5045c2b178d11f2e27b8a74f863761aadce3aed2
+Variant:    No variations
+Units used: mm
+
+"Designator","Comment","Layer","Footprint","Center-X(mm)","Center-Y(mm)","Rotation","Description","Ref-X(mm)","Ref-Y(mm)","Pad-X(mm)","Pad-Y(mm)"
+"J1","CX80B1-24P","TopLayer","CX80B1-24P","6,4830mm","2,1152mm","360","CONN RCPT USB3.1 TYPE C SMT VERT","6,4830mm","2,1152mm","3,8580mm","2,8702mm"
+"R2","5.1K","TopLayer","Res-0201","7,3914mm","-0,4318mm","180","Res 5.1K Ohm 5% 1/20W 0201","7,3914mm","-0,4318mm","7,6664mm","-0,4318mm"
+"R1","5.1K","TopLayer","Res-0201","6,3036mm","4,2926mm","180","Res 5.1K Ohm 5% 1/20W 0201","6,3036mm","4,2926mm","6,5786mm","4,2926mm"
+"J2","3 Pin FPC","BottomLayer","3_Pin_FPC","6,3562mm","0,2794mm","180","CONN FPC 3POS 0.5MM SMD R/A","6,3562mm","0,2794mm","6,8562mm","0,2794mm"
+"C5","0.1uF","BottomLayer","CAP_0201","7,9062mm","1,1430mm","360","Multilayer Ceramic Capacitors MLCC - SMD/SMT 0201 0.1uF 25volts X5R 10%","7,9062mm","1,1430mm","7,6062mm","1,1430mm"
+"C4","0.1uF","BottomLayer","CAP_0201","4,7972mm","2,0506mm","180","Multilayer Ceramic Capacitors MLCC - SMD/SMT 0201 0.1uF 25volts X5R 10%","4,7972mm","2,0506mm","5,0972mm","2,0506mm"
+"C3","0.1uF","BottomLayer","CAP_0201","7,9062mm","2,0320mm","360","Multilayer Ceramic Capacitors MLCC - SMD/SMT 0201 0.1uF 25volts X5R 10%","7,9062mm","2,0320mm","7,6062mm","2,0320mm"
+"C2","0.1uF","BottomLayer","CAP_0201","8,2042mm","3,4544mm","360","Multilayer Ceramic Capacitors MLCC - SMD/SMT 0201 0.1uF 25volts X5R 10%","8,2042mm","3,4544mm","7,9042mm","3,4544mm"
+"C1","0.1uF","BottomLayer","CAP_0201","4,7972mm","3,4544mm","180","Multilayer Ceramic Capacitors MLCC - SMD/SMT 0201 0.1uF 25volts X5R 10%","4,7972mm","3,4544mm","5,0972mm","3,4544mm"

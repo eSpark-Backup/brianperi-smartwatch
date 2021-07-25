@@ -1,0 +1,25 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Bracelet_Aux_v2.0.PrjPcb]
+   Generated File[Bracelet_Aux_v2.0.GTO]
+   Generated File[Bracelet_Aux_v2.0.GTP]
+   Generated File[Bracelet_Aux_v2.0.GTS]
+   Generated File[Bracelet_Aux_v2.0.GTL]
+   Generated File[Bracelet_Aux_v2.0.GBL]
+   Generated File[Bracelet_Aux_v2.0.GBS]
+   Generated File[Bracelet_Aux_v2.0.GBP]
+   Generated File[Bracelet_Aux_v2.0.GBO]
+   Generated File[Bracelet_Aux_v2.0.GM2]
+   Generated File[Bracelet_Aux_v2.0.GPT]
+   Generated File[Bracelet_Aux_v2.0.GPB]
+   Generated File[Bracelet_Aux_v2.0.GD1]
+   Generated File[Bracelet_Aux_v2.0.GG1]
+   Generated File[Bracelet_Aux_v2.0.RUL]
+   Generated File[Bracelet_Aux_v2.0.EXTREP]
+   Generated File[Bracelet_Aux_v2.0.REP]
+
+
+Files Generated   : 16
+Documents Printed : 0
+
+Finished Output Generation At 7:25:26 PM On 7/25/2021

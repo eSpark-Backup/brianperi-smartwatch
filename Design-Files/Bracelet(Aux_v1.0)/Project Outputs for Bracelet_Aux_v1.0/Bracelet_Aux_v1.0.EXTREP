@@ -1,22 +1,22 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: Bracelet_Aux_v1.0.GBR   7/15/2021  3:32:38 PM
+Gerber File Extension Report For: Bracelet_Aux_v1.0.GBR   7/25/2021  7:16:12 PM
 ------------------------------------------------------------------------------------------
 
 
 ------------------------------------------------------------------------------------------
 Layer Extension     Layer Description                      
 ------------------------------------------------------------------------------------------
+.GTL                Top Layer                               
+.GBL                Bottom Layer                            
+.GPT                Top Pad Master                          
+.GPB                Bottom Pad Master                       
 .GTO                Top Overlay                             
 .GTP                Top Paste                               
 .GTS                Top Solder                              
-.GTL                Top Layer                               
-.GBL                Bottom Layer                            
-.GBS                Bottom Solder                           
 .GBP                Bottom Paste                            
+.GBS                Bottom Solder                           
 .GBO                Bottom Overlay                          
 .GM2                Mechanical 2                            
-.GPT                Top Pad Master                          
-.GPB                Bottom Pad Master                       
 .GD1                Drill Drawing                           
 .GG1                Drill Guide                             
 ------------------------------------------------------------------------------------------

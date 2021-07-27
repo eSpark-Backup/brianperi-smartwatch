@@ -30,14 +30,14 @@ Generating : Bottom Layer
 Used DCodes :
     D10
     D17
+    D18
+    D19
     D20
-    D21
-    D22
-    D26
-    D31
-    D32
-    D36
-    D39
+    D23
+    D24
+    D28
+    D33
+    D37
     D44
     D50
     D94
@@ -45,18 +45,10 @@ Used DCodes :
     D99
     D100
     D103
-    D148
-    D172
-    D173
-    D174
+    D157
+    D180
+    D181
     D182
-    D183
-    D184
-    D185
-    D186
-    D187
-    D188
-    D189
     D190
     D191
     D192
@@ -105,6 +97,41 @@ Used DCodes :
     D235
     D236
     D237
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : Bracelet_Main.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D17
+    D18
+    D19
+    D20
+    D23
+    D24
+    D28
+    D33
+    D37
+    D44
+    D50
+    D190
+    D191
+    D192
+    D193
+    D194
+    D195
+    D196
+    D197
+    D198
+    D199
 *************************************************************
 
 *************************************************************
@@ -158,23 +185,6 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : GND
-      File : Bracelet_Main.GP2
-
-    Adding Layer      : GND
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D103
-    D177
-    D178
-    D180
-    D181
-*************************************************************
-
-*************************************************************
 Generating : Bottom Pad Master
       File : Bracelet_Main.GPB
 
@@ -185,36 +195,65 @@ Generating : Bottom Pad Master
 
 Used DCodes :
     D17
+    D18
+    D19
     D20
-    D21
-    D22
-    D26
-    D31
-    D32
-    D36
-    D39
+    D23
+    D24
+    D28
+    D33
+    D37
     D44
     D50
-    D172
-    D173
-    D174
+    D180
+    D181
     D182
-    D183
-    D184
-    D185
-    D186
-    D187
-    D188
-    D189
     D190
     D191
+    D192
+    D193
+    D194
+    D195
+    D196
+    D197
+    D198
+    D199
 *************************************************************
 
 *************************************************************
-Generating : Bottom Paste
-      File : Bracelet_Main.GBP
+Generating : GND
+      File : Bracelet_Main.GP2
 
-    Adding Layer      : Bottom Paste
+    Adding Layer      : GND
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D103
+    D185
+    D186
+    D188
+    D189
+*************************************************************
+
+*************************************************************
+Generating : Fllex1 Bottom Overlay 1
+      File : Bracelet_Main.GBO
+
+    Adding Layer      : Fllex1 Bottom Overlay 1
+
+
+Used DCodes :
+    D10
+    D12
+*************************************************************
+
+*************************************************************
+Generating : Fllex1 Bottom Coverlay 1
+      File : Bracelet_Main.GBS
+
+    Adding Layer      : Fllex1 Bottom Coverlay 1
 
     Adding Layer      : Bottom Layer
 
@@ -222,18 +261,99 @@ Generating : Bottom Paste
 
 
 Used DCodes :
+    D53
+    D54
+    D55
+    D56
+    D60
+    D65
+    D70
+    D74
+    D80
+    D83
+    D89
+    D92
+    D93
+    D94
+    D95
+    D96
+    D97
+    D238
+    D239
+    D240
+    D241
+    D242
+    D243
+    D244
+    D245
+    D246
+    D247
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : Bracelet_Main.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
     D17
+    D18
+    D19
     D20
     D21
     D22
+    D23
+    D24
+    D25
     D26
+    D27
+    D28
+    D29
+    D30
     D31
     D32
+    D33
+    D34
+    D35
     D36
+    D37
+    D38
     D39
+    D40
+    D41
+    D42
+    D43
     D44
+    D45
+    D46
+    D47
+    D48
+    D49
     D50
+    D51
+    D52
+    D101
+    D180
+    D181
     D182
+*************************************************************
+
+*************************************************************
+Generating : POWER
+      File : Bracelet_Main.GP1
+
+    Adding Layer      : POWER
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D103
     D183
     D184
     D185
@@ -241,19 +361,6 @@ Used DCodes :
     D187
     D188
     D189
-    D190
-    D191
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 2
-      File : Bracelet_Main.GM2
-
-    Adding Layer      : Mechanical 2
-
-
-Used DCodes :
-    D10
 *************************************************************
 
 *************************************************************
@@ -313,6 +420,17 @@ Used DCodes :
     D95
     D96
     D97
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 2
+      File : Bracelet_Main.GM2
+
+    Adding Layer      : Mechanical 2
+
+
+Used DCodes :
+    D10
 *************************************************************
 
 *************************************************************
@@ -440,125 +558,6 @@ Used DCodes :
     D172
     D173
     D174
-*************************************************************
-
-*************************************************************
-Generating : Top Pad Master
-      File : Bracelet_Main.GPT
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D17
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D39
-    D40
-    D41
-    D42
-    D43
-    D44
-    D45
-    D46
-    D47
-    D48
-    D49
-    D50
-    D51
-    D52
-    D101
-    D172
-    D173
-    D174
-*************************************************************
-
-*************************************************************
-Generating : Fllex1 Bottom Coverlay 1
-      File : Bracelet_Main.GBS
-
-    Adding Layer      : Fllex1 Bottom Coverlay 1
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D53
-    D57
-    D58
-    D63
-    D68
-    D69
-    D73
-    D77
-    D80
-    D83
-    D89
-    D92
-    D93
-    D94
-    D95
-    D96
-    D97
-    D238
-    D239
-    D240
-    D241
-    D242
-    D243
-    D244
-    D245
-    D246
-    D247
-*************************************************************
-
-*************************************************************
-Generating : Fllex1 Bottom Overlay 1
-      File : Bracelet_Main.GBO
-
-    Adding Layer      : Fllex1 Bottom Overlay 1
-
-
-Used DCodes :
-    D10
-    D12
-*************************************************************
-
-*************************************************************
-Generating : POWER
-      File : Bracelet_Main.GP1
-
-    Adding Layer      : POWER
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D10
-    D103
     D175
     D176
     D177
@@ -566,6 +565,7 @@ Used DCodes :
     D179
     D180
     D181
+    D182
 *************************************************************
 
 *************************************************************

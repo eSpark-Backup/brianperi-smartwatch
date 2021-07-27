@@ -1,24 +1,24 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: Bracelet_Main.GBR   7/25/2021  6:38:23 PM
+Gerber File Extension Report For: Bracelet_Main.GBR   7/27/2021  4:04:37 PM
 ------------------------------------------------------------------------------------------
 
 
 ------------------------------------------------------------------------------------------
 Layer Extension     Layer Description                      
 ------------------------------------------------------------------------------------------
-.GTL                Top Layer                               
-.GBL                Bottom Layer                            
-.GP1                POWER                                   
-.GP2                GND                                     
-.GPT                Top Pad Master                          
-.GPB                Bottom Pad Master                       
 .GTO                Fllex1 Top Overlay 1                    
 .GTP                Top Paste                               
 .GTS                Fllex1 Top Coverlay 1                   
+.GTL                Top Layer                               
+.GP1                POWER                                   
+.GP2                GND                                     
+.GBL                Bottom Layer                            
 .GBS                Fllex1 Bottom Coverlay 1                
 .GBP                Bottom Paste                            
 .GBO                Fllex1 Bottom Overlay 1                 
 .GM2                Mechanical 2                            
+.GPT                Top Pad Master                          
+.GPB                Bottom Pad Master                       
 .GD1                Drill Drawing                           
 .GG1                Drill Guide                             
 ------------------------------------------------------------------------------------------
